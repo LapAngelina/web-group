@@ -30,19 +30,18 @@ td {
 
 .pravilo {
     color: rgb(75, 224, 15);
-    /*внешний отступа от левого края элемента*/
     margin-left: 10px;
 }
 
 .name-input {
     border: 4px sold rebeccapurple;
     border-radius: 5px;
-    background-color: aqua;
-    color: rgb(46, 128, 50);
+    background-color: rgb(255, 208, 243);
+    color: rgb(151, 14, 94);
 }
 
 .name-input::placeholder {
-    color: rgb(64, 177, 36);
+    color: rgb(177, 36, 142);
     font-weight: 700;
 }
 
@@ -50,8 +49,45 @@ textarea {
     padding: 1em;
 }
 
-.header {
+body {
     background-image: url("./img/IMG_3205.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0px;
+}
+
+
+
+#content { 
+    display: block;
+    position: relative;
+}
+
+.left_side{
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    background-color: rgba(216, 238, 201, 0.5);
+}
+
+
+.right_side{
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    float: right;
+    background-color: rgba(255, 185, 214, 0.5);
+}
+
+.footer{
+    background-color: rgba(155, 153, 255, 0.5);
+    margin: 0 auto;
+    min-height: 60px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.right_side div, .left_side div{
+    padding: 50px;
 }
