@@ -131,6 +131,10 @@
     flex-grow: 1;
 }
 
+.main-course {
+    border: none;
+}
+
 .main-students {
     max-width: 1202px;
 }
@@ -152,6 +156,10 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 1.17;
+}
+
+.main-heading1 {
+    margin: 0.67em 140px;
 }
 
 h2 {
