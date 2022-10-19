@@ -170,7 +170,14 @@ h2 {
     line-height: 29px;
 }
 
+.intro-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .intro-text {
+    margin: 0;
     width: 100%;
     max-width: 634px;
     font-family: 'Roboto';
@@ -178,6 +185,19 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+
+.intro-aside {
+    color: rgba(100, 100, 100, 1);
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.intro-aside > blockquote {
+    margin: 0;
 }
 
 .intro-text > strong {
