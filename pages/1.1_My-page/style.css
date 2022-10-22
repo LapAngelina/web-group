@@ -2,14 +2,106 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.name {
-    color: brown;
+/* Header */
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(216, 238, 201, 0.5);
+}
+
+.site-logo {
+    width: 60px;
+    height: 60px;
 }
 
 h1 {
-    font-size: 60px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 10px;
+}
+
+.site-menu {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(234, 93, 33, 1);
+    text-decoration: none;
+}
+
+/*Login-popup */
+.login-popup {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 530px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 26px 28px 56px;
+    background-color: white;
+    border: 1px solid #213B7E;
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup-button {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #EA6113;
+    border: none;
+}
+
+/*Main*/
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1202px;
+    margin: 0 auto;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.name {
+    color: brown;
 }
 
 table {
@@ -29,12 +121,11 @@ td {
 }
 
 .pravilo {
-    color: rgb(75, 224, 15);
+    color: rgba(0, 0, 0, 1);
     margin-left: 10px;
 }
 
 .name-input {
-    border: 4px sold rebeccapurple;
     border-radius: 5px;
     background-color: rgb(255, 208, 243);
     color: rgb(151, 14, 94);
@@ -56,8 +147,6 @@ body {
     margin: 0px;
 }
 
-
-
 #content { 
     display: block;
     position: relative;
@@ -67,7 +156,6 @@ body {
     display: inline-block;
     position: relative;
     width: 70%;
-    background-color: rgba(216, 238, 201, 0.5);
 }
 
 
@@ -79,15 +167,21 @@ body {
     background-color: rgba(255, 185, 214, 0.5);
 }
 
-.footer{
-    background-color: rgba(155, 153, 255, 0.5);
-    margin: 0 auto;
-    min-height: 60px;
-    display: inline-block;
-    text-align: center;
+/* Footer */
+.footer {
+    box-sizing: border-box;
     width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(216, 238, 201, 0.5); 
 }
 
-.right_side div, .left_side div{
+.right_side div {
     padding: 50px;
 }
