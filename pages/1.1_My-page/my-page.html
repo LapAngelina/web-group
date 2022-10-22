@@ -1,118 +1,102 @@
-<!DOCTYPE html="lang">
-<html>
+<!DOCTYPE html>
+<html lang="ru">
     <head>
-        <title>
-            О себе
-        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>О себе</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
-
     <body>
         <header class="header">
-            <h1 style="color:brown">Hello world!!!</h1>
-            <img src="img/uv4L5YEQ9s0.png" alt="Ава" width="200" height="200">
-
+            <img class="site-logo" src="img/uv4L5YEQ9s0.png" alt="logotype">
+            <div class="site-menu">
+                <h1 style="color:brown">Hello world!!!</h1>
+            </div>
+            <a class="login-button" href="login.html">Войти</a>
+            <div class="login-popup">
+                <h2 class="login-heading">Заявка</h2>
+                <form class="login-form" action="URL" method="get">
+                    <label for="name">Ваше имя:</label>
+                    <input class="name-input" id="name" type="text" name="username" required placeholder="Вася Пупкин">
+                    <label for="email">Почта:</label>
+                    <input id="email" type="email" name="email" required placeholder="email@email.ru">
+                    <fieldset>
+                        <legend>Пакеты фотосъёмки</legend>
+                        <label for="samsung">Свадьба</label>
+                        <input id="samsung" type="checkbox" name="brand" value="samsung">
+                        <label for="apple">Юбилей</label>
+                        <input id="apple" type="checkbox" name="brand" value="apple">
+                        <label for="lg">Детская</label>
+                        <input id="lg" type="checkbox" name="brand" value="lg">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Скидка</legend>
+                        <label for="discont">Со скидкой</label>
+                        <input id="discont" type="radio" name="discont" value="yes">
+                        <label for="no-discont">Без скидки</label>
+                        <input id="no-discont" type="radio" name="discont" value="no">
+                    </fieldset>
+                    <textarea name="text" id="007" cols="30" rows="10"></textarea>
+                    <input type="color" name="color" id="008">
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
         </header>
-        
-        <div id="content">
-                <div class="left_side">
-                    <div>
+        <main class="main">
+            <div id="content">
+                <div>
                     <h2>Оглавление</h2>
-                    <ul>
-                        <li><a href="#part-1">Часть 1</a></li>
-                        <li><a href="#part-2">Часть 2</a></li>
-                        <li><a href="#part-3">Часть 3</a></li>
-                    </ul>
-
+                        <ul>
+                            <li><a href="#part-1">Часть 1</a></li>
+                            <li><a href="#part-2">Часть 2</a></li>
+                            <li><a href="#part-3">Часть 3</a></li>
+                        </ul>
                     <h2 id="part-1">Часть 1</h2>
-                    <h3>Всем привет!</h3>
-                    
-                    <p> Меня зовут <span class="name"><strong><em>Ангелина</em></strong></span>. Я репортажный фотограф, снимаю свадьбы, юбилеи, детские праздники. Мои работы можно посмотреть <a href=https://vk.com/lapangelina_photo target="_blank"> здесь.</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.</p>
-
-
+                    <h3>Всем привет!</h3> 
+                    <p> Меня зовут <span class="name"><strong><em>Ангелина</em></strong></span>. Я репортажный фотограф, снимаю свадьбы, юбилеи, детские праздники. Мои работы можно посмотреть <a href=https://vk.com/lapangelina_photo target="_blank"> здесь.</a> По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком. По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком.По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком.</p>
                     <h2 id="part-2">Часть 2</h2>
                     <table>
-                        <tr style="background-color: rgb(32, 88, 10);">
+                        <tr style="background-color: rgba(32, 88, 10, 0.5);">
                             <th>Номер</th>
                             <th>Описание услуги</th>
                             <th>Стоимость услуги</th>
                         </tr>
-
                         <tr>
                             <th>1</th>
                             <td>Свадебная фотосъёмка</td>
-                            <td>1500 руб./час.</td>
+                            <td>2000 руб./час.</td>
                         </tr>
-
                         <tr>
                             <th>2</th>
                             <td>Фотосъёмка юбилея</td>
-                            <td>1500 руб./час.</td>
+                            <td>2000 руб./час.</td>
                         </tr>
-
                         <tr>
                             <th>3</th>
                             <td>Детская фотосъёмка</td>
-                            <td>1500 руб./час.</td>
+                            <td>2000 руб./час.</td>
                         </tr>
-                    </table>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.</p>
-
+                    </table> 
+                    <p>По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком. По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком. По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком.</p>
                     <h2 id="part-3">Часть 3</h2>
-                    <div class="pravilo">
-                        <p><strong>Пакеты свадебной съёмки</strong></p>
-                        <ol type="1">
-                            <li>Полный день</li>
-                            <li>Пол-дня</li>
-                            <li>ЗАГС</li>
-                        </ol>
-                    </div>
-                
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est. Vitae quis debitis inventore accusantium ab nihil officia beatae quos numquam voluptatibus aspernatur minus, sit nesciunt hic a non distinctio.</p>
+                        <div class="pravilo">
+                            <p><strong>Пакеты свадебной съёмки</strong></p>
+                            <ol type="1">
+                                <li>Полный день</li>
+                                <li>Пол-дня</li>
+                                <li>ЗАГС</li>
+                            </ol>
+                        </div>
+                    <p>По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком. По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком. По рзеузльаттам илссоевадний одонго анлигсйокго унвиертисета, не иеемт занчнеия, в каокм проякде рсапжоолены бкувы в солве. Галовне, чотбы преавя и пслонедяя бквуы блыи на мсете. осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы не чиаетм кдаужю бкуву по отдльенотси, а все солво цлиеком.</p>
                 </div>
-                </div>
-
-                <div class="right_side">
-                    <div>
-                    <h3>Формы</h3>
-                    <form action="" method="get">
-                        <label for="name">Ваше имя:</label>
-                        <input class="name-input" id="name" type="text" name="username" required placeholder="Вася Пупкин">
-                        <label for="email">Почта:</label>
-                        <input id="email" type="email" name="email" required placeholder="email@email.ru">
-                        
-                        <fieldset>
-                            <legend>Формы</legend>
-                            <label for="samsung">Samsung</label>
-                            <input id="samsung" type="checkbox" name="brand" value="samsung">
-                            <label for="apple">Apple</label>
-                            <input id="apple" type="checkbox" name="brand" value="apple">
-                            <label for="lg">LG</label>
-                            <input id="lg" type="checkbox" name="brand" value="lg">
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Скидка</legend>
-                            <label for="discont">Со скидкой</label>
-                            <input id="discont" type="radio" name="discont" value="yes">
-                            <label for="no-discont">Без скидки</label>
-                            <input id="no-discont" type="radio" name="discont" value="no">
-                        </fieldset>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <input type="color" name="color" id="">
-                        <button type="submit">Отправить</button>
-                    </form>
-                    </div>
-                </div>
-        </div>
-
+            </div> 
+        </main> 
         <footer class="footer">
             <p class="copywrite">2022 &copy; <a class="inoop-link" href="https://lapangelina.ru">Ангелина Лаптева</a></p>
         </footer>
-
-
-
-        
+        <script src="js/login-popup.js"></script>
     </body>
 </html>
