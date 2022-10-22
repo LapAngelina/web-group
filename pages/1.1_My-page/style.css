@@ -56,8 +56,8 @@ h1 {
     display: none;
     position: fixed;
     z-index: 2;
-    top: 530px;
-    left: 50%;
+    top: 570px;
+    left: 75%;
     transform: translate(-50%, -100%);
     box-sizing: border-box;
     width: 100%;
@@ -70,7 +70,7 @@ h1 {
 }
 
 .login-form {
-    display: flex;
+    display: block;
     align-items: center;
     flex-direction: column;
 }
@@ -127,12 +127,10 @@ td {
 
 .name-input {
     border-radius: 5px;
-    background-color: rgb(255, 208, 243);
-    color: rgb(151, 14, 94);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .name-input::placeholder {
-    color: rgb(177, 36, 142);
     font-weight: 700;
 }
 
