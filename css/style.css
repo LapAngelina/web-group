@@ -7,6 +7,17 @@
     margin: 0;
 }
 
+/*.page::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.5);
+}*/
+
 /* Header */
 .header {
     box-sizing: border-box;
@@ -93,6 +104,15 @@
     flex-direction: column;
 }
 
+.login-input::placeholder,
+.password-input::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
 .login-form > input {
     width: 100%;
     max-width: 444px;
@@ -135,12 +155,15 @@
     border: none;
 }
 
-.main-students {
-    max-width: 1202px;
+.main-contact {
+    width: 100%;
+    min-width: 1268px;
+    max-width: 370px;
+    margin: auto;
 }
 
-.main-contact {
-    max-width: 1268px;
+.main-students {
+    max-width: 1202px;
 }
 
 .class-photo {
@@ -194,6 +217,7 @@ h2 {
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
+    text-indent: -20px;
 }
 
 .intro-aside > blockquote {
@@ -210,6 +234,18 @@ h2 {
 }
 
 /* Students */
+.student-heading {
+    max-width: 1202px;
+    padding: 0 13px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.student-heading::after {
+    content: "👧👦";
+}
+
 .students {
     display: flex;
     flex-wrap: wrap;
@@ -217,7 +253,6 @@ h2 {
     gap: 30px;
     justify-content: space-around;
 }
-
 
 .student {
     display: flex;
@@ -236,7 +271,6 @@ h2 {
     }
 }
 
-
 a.student > .student{
     padding: 0;
     max-width: 100%;
@@ -248,6 +282,27 @@ a.student > .student{
 
 .student-name {
     text-align: center;
+}
+
+.big-box {
+    position: relative;
+    top: -277px;
+    right: -66px;
+}
+
+.circle {
+    width: 94px;
+    height: 24px;
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #3aa828;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /*About*/
@@ -309,8 +364,8 @@ a.student > .student{
         gap: 1em;
     }
     .site-logo {
-        width: 100%;
-        min-height: 80px;
+       width: 100%;
+       min-height: 80px;
     }
     .site-menu {
         justify-content: center;
@@ -326,4 +381,8 @@ a.student > .student{
 
 .show-popup {
     display: block;
+}
+
+.login-input:invalid {
+    outline: 5px solid red;
 }
