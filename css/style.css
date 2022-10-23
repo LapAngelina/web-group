@@ -245,6 +245,29 @@ h2 {
 
 .student-heading::after {
     content: "👧👦";
+    display: inline-block;
+    margin-left: 0.5em;
+    visibility: hidden;
+}
+
+.student-heading:hover::after {
+    visibility: visible;
+    animation: iconRight 3s ease-in-out 1;
+}
+
+@keyframes iconRight {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .students {
