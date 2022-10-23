@@ -289,6 +289,13 @@ a.student > .student{
     position: relative;
     top: -277px;
     right: -66px;
+    cursor: pointer;
+    transition: 3s linear;
+}
+
+.big-box:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .circle {
